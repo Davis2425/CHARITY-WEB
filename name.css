@@ -400,3 +400,12 @@ font-size: 14px;
 outline: none;
 }
 /* Education section end */
+
+
+
+/*gallery section start here*/
+
+.gallery .galleryContainer {
+columns: 4;
+column-gap: 20px;
+}
