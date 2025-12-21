@@ -409,3 +409,174 @@ outline: none;
 columns: 4;
 column-gap: 20px;
 }
+.gallery .galleryContainer .item {
+position: relative;
+margin-bottom: 20px;
+overflow: hidden;
+
+}
+
+.gallery .galleryContainer img{
+width: 100%;
+display: block;
+transition: 0.4s;
+}
+
+.gallery .galleryContainer .title {
+position: absolute;
+background-color: var(--gray);
+padding: 5px;
+margin: 5px;
+border-radius: 5px;
+font-size: 13px;
+font-weight: bold;
+opacity: 0;
+z-index: 1;
+transition: 0.4s;
+}
+
+.gallery .galleryContainer .item:hover .title {
+opacity: 1;
+
+}
+
+.gallery .galleryContainer .item:hover img{
+transform: scale(1.2);
+
+}
+
+  
+/* join us section start here */
+
+
+.join{
+    background-image: url(imgs/pattern.jpg);
+    color: #fff;
+}
+.join .joinTitle {
+font-size: 40px;
+font-weight: 100;
+}
+
+.join .joinTitle span {
+    font-weight: 800;
+}
+
+
+.join button {
+padding: 7px 15px;
+margin-top: 20px;
+border: none;
+font-weight: 800;
+font-size: 15px;
+
+
+}
+
+.join button.JoinNow {
+margin-left: 10px;
+background-color: #424242;
+color: #fff;
+}
+
+.join button.adoptBtn{
+background-color: var(--gray);
+}
+
+
+
+/* footer*/
+
+footer {
+background-color: #181818;
+color: #7f7f7f;
+padding: 50px 0;
+font-size: 14px;
+
+}
+
+footer .container{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 50px;
+}
+
+footer .title{
+font-size: 20px;
+font-weight: 600;
+text-transform: uppercase;
+border-bottom: 2px solid;
+margin-bottom: 30px;
+padding: 0 5px 0;
+}
+
+footer p {
+margin-bottom: 10px;
+}
+
+
+footer .linksContainer ul {
+list-style-type: none;
+}
+
+
+footer .linksContainer ul li a {
+text-decoration: none;
+color: #7f7f7f;
+margin-bottom: 10px;
+display: inline-block;
+}
+
+footer .newsLetterContainer img{
+height: 40px;
+margin-bottom: 11px;
+}
+
+
+footer .newsLetterContainer input{
+background-color: transparent;
+border: 1px solid #7f7f7f;
+outline: none;
+padding: 10px 15px;
+width: 100%;
+margin-top: 10px;
+color: #7f7f7f;
+border-radius: 30px;
+}
+/* responsive code start here*/
+
+@media screen and (max-width: 1148px) {
+    .container {
+width: 100%;
+padding: 0 15px;
+    }
+.education .videoPlayer {
+    width: 1200px;
+}
+
+
+}
+
+
+@media screen and (max-width: 1000px){
+.banner h1{
+    margin-top: 200px;
+}
+#aboutSection .cards {
+    justify-content: space-around;
+    height: auto;
+}
+#aboutSection .cards > div {
+    margin: 10px 0;
+}
+
+
+}
+
+@media screen and (max-width: 1024px) {
+.banner {
+    background-position-x:45%;
+} 
+.banner h1{
+    font-size: 2.5rem;
+}
