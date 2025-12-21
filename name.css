@@ -580,3 +580,14 @@ padding: 0 15px;
 .banner h1{
     font-size: 2.5rem;
 }
+.programs  .boxContainer {
+    grid-template-columns: repeat(2,  1fr);
+}
+
+
+}
+@media screen and (max-width: 600px) {
+header nav {
+    position: relative;
+
+}
